@@ -1,0 +1,125 @@
+.container{
+    height:100vh;
+}
+.split {
+    height: 100%;
+   
+    position: fixed;
+    /* z-index: 1; */
+    top: 0%;
+    /* overflow-x: hidden; */
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    width: 30%;
+    background-color: #2471A3   ;
+  }
+  
+  .right {
+    right: 0;
+    width: 70%;
+    background-color: 	#A9CCE3 ;
+  }
+  .left input[type = text]
+  {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    /* dispay: inline-block; */
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+
+  .left button {
+    background-color: 	#64B5F6 ;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    border-radius: 4px;
+    border-bottom: 2px;
+    border-top: 2px;
+  }
+
+  .right textarea{
+    width: 90%;
+    height: 66%;
+    margin: 34px 24px;
+    padding: 12px 20px;
+    /* padding :0px; */
+    background-color:  whitesmoke;
+    resize: none;
+  }
+  .bottom{
+      margin-top:10%;
+      height: 500px;
+      /* margin: 8px 8px; */
+  }
+
+  .scroll{
+      overflow-y: scroll;
+      height:450px;
+      background-color: 	whitesmoke;
+
+  }
+
+  ul{
+      list-style-type: none;
+      padding-inline-start: 0px;
+      margin-top:0px;
+      margin-bottom:0px;
+  }
+
+  li{
+      border-bottom:1px solid#BDBDBD;
+      list-style-position: inside;
+      padding: 18px;
+      height:60px;
+      background-color: #ECEFF1;
+      font-size: 16px;
+  }
+  .icon{
+      color:white;
+  }
+
+  .right button{
+    background-color: 	#2471A3 ;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    /* margin: 64px 24px; */
+    padding: 12px 20px;
+    float:right;
+    margin: 20px 24px 0px 0px;
+  }
+
+  button:hover{
+    opacity: 0.7;
+  }
+
+  @media (max-width:600px)
+  {
+      .col-sm-12{
+          width:100%;
+      }
+      .right{
+          display: none;
+      }
+      .left{
+          width:100%;
+      }
+  }
+
+  /* @media (max-width:850px)
+  {
+      .left input[type=text]
+      {
+
+      }
+  } */

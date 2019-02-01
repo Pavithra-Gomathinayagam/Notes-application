@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body onload="displayList()">
+    <div class = "container">
+        <div class = "split left">
+            <div class ="top">
+                <form>
+                    <input class="col-sm-12" type ="text" placeholder = "Search...">
+                    <span><button  class="col-sm-12" type = "submit"><i class="fa fa-search" aria-hidden="true"></i>
+                    </button></span>
+                </form>
+            </div>
+            <div class="bottom">
+                <div class="scroll">
+                    <ul id="menu">
+                        <!-- <li>
+                            Java description
+                        </li>
+                        <li>
+                            C description
+                        </li> -->
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class = "split right" id="txt">
+            <button  class="col-sm-12" type = "button" id="addnote" ><b>ADD  </b><i class="fa fa-plus icon" aria-hidden="true"></i></button>
+            <button  class="col-sm-12" type = "button"><b>DELETE  </b><i class="fa fa-plus icon" aria-hidden="true"></i></button>
+            <textarea id="display">
+
+            </textarea>
+        
+        </div>
+    </div>
+</body>
+<script src="sample.js"></script>
+</html>

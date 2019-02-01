@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="log.css">
+    <title>LOGIN/SIGNUP</title>
+</head>
+
+<body onload="viewlogin()">
+    <div class="container">
+        <div class="head">
+            <div onclick="viewlogin()" data-tab="login">LOGIN</div>
+            <!-- <button type="submit"  onclick="viewlogin()">LOGIN</button> -->
+            <div onclick="viewsignup()" data-tab="signup">SIGNUP</div>
+            <!-- <button type="submit"  onclick="viewsignup()">SIGNUP</button> -->
+        </div>
+        <form action="" id="login">
+            <div class="login">
+                <label for="uname"><b>USERNAME</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+
+                <label for="psw"><b>PASSWORD</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+
+                <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                <button type="button" id="login" onclick="fetchJson()">LOGIN</button>
+
+            </div>
+        </form>
+        <form id="signup">
+            <div class="signup">
+                <label for="uname"><b>USERNAME</b></label>
+                <input type="text" id="user" name="username" placeholder="Your name.." required>
+
+                <label for="email"><b>EMAIL</b></label>
+                <input type="email" id="email" name="email" placeholder="Your email id.." required>
+
+                <label for="psw"><b>PASSWORD</b></label>
+                <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+
+                <label for="rpsw"><b>RETYPE-PASSWORD</b></label>
+                <input type="text" id="rpsw" name="rpsw" placeholder="Retype the password" required>
+
+
+                <button type="button" onclick="register()">REGISTER</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+<script src="log.js"></script>
+
+</html>
